@@ -4,6 +4,7 @@ header {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 950px;
 }
 
 .img-hero {
