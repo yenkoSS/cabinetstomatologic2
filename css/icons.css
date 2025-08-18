@@ -1,0 +1,73 @@
+.icon-quick-contact {
+  fill: var(--color-secondary);
+  width: 50px;
+  height: auto;
+}
+
+.icon-menu {
+  width: 3rem;
+  height: auto;
+  fill: white;
+}
+
+@media screen and (min-width: 1200px) {
+  .icon-menu {
+    display: none;
+  }
+}
+
+.icon-close {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  width: 40px;
+  height: auto;
+  fill: white;
+}
+
+.icon-whyus {
+  width: 8rem;
+  height: auto;
+  fill: var(--color-primary);
+}
+
+.icon-card-services {
+  width: 8rem;
+  height: auto;
+  fill: var(--color-primary);
+  background-color: white;
+}
+
+.icon-about {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  width: 30rem;
+  height: auto;
+  fill: #66006618;
+  transform: rotate(45deg);
+}
+
+.icon-counter {
+  width: 9rem;
+  height: auto;
+  fill: var(--color-primary);
+  display: none;
+}
+
+.icon-footer {
+  width: 30rem;
+  height: auto;
+}
+
+.icon-social-footer {
+  width: 5rem;
+  height: auto;
+  fill: white;
+}
+
+.icon-contact {
+  width: 6rem;
+  height: auto;
+  fill: var(--color-primary);
+}

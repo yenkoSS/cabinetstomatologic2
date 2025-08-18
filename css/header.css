@@ -1,0 +1,12 @@
+header {
+  height: 100vh;
+  background-image: linear-gradient(to right, #000a5b, #000b5b44), url("../img/hero\ cabinet\ stomatologic.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-hero {
+  width: 60%;
+  height: auto;
+}
