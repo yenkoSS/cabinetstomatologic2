@@ -1,40 +1,30 @@
 .nav-header {
-  padding: 2rem 2rem;
+  padding: 2rem 5rem;
   animation: showHeaderNav 400ms;
   position: relative;
+  width: 100%;
 }
 
 .nav-fixed {
   display: none;
-  padding: 2rem 2rem;
+  animation: showHeaderNav 400ms;
+  position: fixed;
+  width: 100% !important;
+  z-index: 3;
+  left: 0;
+  top: 0 !important;
+  z-index: 3;
+}
+
+.nav-fixed-services {
+  display: none;
   animation: showHeaderNav 400ms;
   position: fixed;
   width: 100%;
   z-index: 3;
   left: 0;
-  top: 0;
+  top: 0 !important;
   z-index: 3;
-}
-
-.logo-navbar {
-  width: 12rem;
-  height: auto;
-}
-
-.logo-navbar-service {
-  bottom: 6rem;
-}
-
-@keyframes showHeaderNav {
-  from {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media screen and (min-width: 992px) {
@@ -44,27 +34,14 @@
 }
 
 .icon-logo-header {
-  width: 15rem;
+  width: 20rem;
   height: auto;
-}
-
-@media screen and (min-width: 1400px) {
-  .icon-logo-header {
-    width: 20rem;
-  }
 }
 
 .nav-header-list-lg {
   list-style-type: none;
-  display: none;
   gap: 1.6rem;
   position: relative;
-}
-
-@media screen and (min-width: 1200px) {
-  .nav-header-list-lg {
-    display: flex;
-  }
 }
 
 .icon-sm-indicator {
@@ -164,35 +141,6 @@
   display: flex;
 }
 
-.nav-header-list-sm-subservice {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  margin-left: 2.5rem;
-  z-index: 6;
-}
-
-.nav-header-list-sm-subservice li a {
-  text-decoration: none;
-  font-size: 2.6rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  padding: 5px 0px;
-  align-items: center;
-}
-
-.nav-header-list-sm-subservice li a::before {
-  content: "";
-  display: block;
-  min-width: 10px;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
 .nav-header-link-sm {
   text-transform: uppercase;
   font-family: var(--font-buttons), sans-serif;
@@ -207,23 +155,12 @@
   }
 }
 
-@keyframes showNavFixed {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .breadcrumbs {
-  padding: 2rem 0;
+  padding: 2rem 5rem;
   font-size: 16px;
   z-index: 3;
   animation: showBreadcrumbS 500ms;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.253);
 }
 
 .breadcrumbs a {
@@ -236,23 +173,11 @@
 }
 
 .breadcrumbs a:hover {
-  color: white !important;
+  color: var(--color-secondary) !important;
   transition: 200ms;
 }
 
 .breadcrumbs .span-page {
   font-weight: 600;
   font-family: var(--font-heading-secondary), sans-serif;
-}
-
-@keyframes showBreadcrumbS {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }

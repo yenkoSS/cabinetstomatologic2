@@ -25,12 +25,6 @@
   transition: 100ms ease-in;
 }
 
-@media screen and (min-width: 1200px) {
-  .btn-navbar {
-    display: block;
-  }
-}
-
 .btn-hero {
   display: block;
 }
@@ -95,40 +89,4 @@
 .btn-submit:hover {
   transform: translateY(-2px);
   transition: 100ms ease-in;
-}
-
-@keyframes showBtnHero {
-  from {
-    transform: translateY(-500px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes showBtnHeroSecond {
-  from {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes pulsePrimary {
-  0% {
-    box-shadow: 0 0 0 0 #d70007ce;
-  }
-  50% {
-    box-shadow: 0 0 0 10px #d7000727;
-  }
-  100% {
-    box-shadow: 0 0 0 0 #d7000727;
-  }
 }

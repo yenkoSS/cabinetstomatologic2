@@ -102,11 +102,6 @@ h4 {
   letter-spacing: -0.5px;
 }
 
-.h3-card-services {
-  font-weight: 700;
-  font-size: 18px;
-}
-
 /* >>> H3 END<<< */
 
 /* >>> P <<< */
@@ -131,66 +126,9 @@ blockquote {
 
 /* ----- TYPOGRAPHY END----- */
 
-@keyframes showTextHero {
-  from {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes showHeroPrice {
-  from {
-    transform: translateY(-400px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .text-title-section {
     font-size: 20px;
-  }
-}
-
-@keyframes showTextAnswer {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes showTextHeroWelcome {
-  from {
-    transform: translateX(500px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes showH1 {
-  from {
-    transform: translateY(500px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0px);
-    opacity: 1;
   }
 }
 
@@ -201,14 +139,14 @@ blockquote {
 
 .title-quick-contact {
   font-family: "Urbanist", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .details-quick-contact {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .text-hero {

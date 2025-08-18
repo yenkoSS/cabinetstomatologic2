@@ -90,10 +90,6 @@
   color: var(--color-secondary-light) !important;
 }
 
-.bg-secondary-light {
-  color: var(--color-secondary-light) !important;
-}
-
 .section-divider {
   width: 50px;
   height: 3px;
@@ -175,67 +171,4 @@ section {
 
 iframe {
   height: 300px;
-}
-
-/* ----- Body Elements ----- */
-
-.icon-up {
-  position: fixed;
-  right: 3rem;
-  bottom: 2rem;
-  width: 3rem;
-  height: auto;
-  animation: levitate 1.5s ease-in-out infinite;
-  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.137));
-  cursor: pointer;
-  z-index: 2;
-  fill: var(--color-secondary);
-}
-
-.icon-whatsapp {
-  position: fixed;
-  right: 2rem;
-  bottom: 9rem;
-  width: 5rem;
-  height: auto;
-  z-index: 2;
-  animation: pulseShadow 2s infinite ease-in-out;
-  cursor: pointer;
-  fill: var(--color-secondary);
-}
-
-@media screen and (min-width: 992px) {
-  .icon-up {
-    right: 4rem;
-    bottom: 2rem;
-    width: 3rem;
-  }
-
-  .icon-whatsapp {
-    right: 2.3rem;
-    bottom: 10rem;
-    width: 6rem;
-  }
-}
-
-/* ----- Keyframes ----- */
-
-@keyframes levitate {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-6px);
-  }
-}
-
-@keyframes pulseShadow {
-  0%,
-  100% {
-    filter: drop-shadow(2px 2px 5px rgba(0, 102, 255, 0.164));
-  }
-  50% {
-    filter: drop-shadow(2px 2px 20px rgba(0, 102, 255, 0.514));
-  }
 }

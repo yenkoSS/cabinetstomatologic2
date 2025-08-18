@@ -30,30 +30,7 @@ document.querySelectorAll(".nav-external").forEach((link) => {
   });
 });
 
-/* NAV FIXED */
-
-window.addEventListener("scroll", () => {
-  if (scrollY > 300) {
-    document.querySelector(".nav-fixed").style.display = "flex";
-  }
-  if (scrollY < 300) {
-    document.querySelector(".nav-fixed").style.display = "none";
-  }
-});
-
 /* NAV SM */
-
-document.querySelectorAll(".icon-menu").forEach((iconMenu) => {
-  iconMenu.addEventListener("click", () => {
-    document.querySelector(".nav-header-list-sm").style.display = "flex";
-  });
-});
-
-document.querySelectorAll(".icon-close").forEach((iconClose) => {
-  iconClose.addEventListener("click", () => {
-    document.querySelector(".nav-header-list-sm").style.display = "none";
-  });
-});
 
 document.querySelectorAll(".nav-header-link-sm").forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -68,15 +45,41 @@ document.querySelectorAll(".nav-header-link-sm").forEach((link) => {
   document.querySelector("body").classList.remove("no-scroll");
 });
 
-document.querySelectorAll(".nav-services-sm").forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const id = link.getAttribute("href");
-    document.querySelector(".nav-header-list-sm").style.display = "none";
-    window.location.href = id;
-    setTimeout(() => history.replaceState(null, null, "index.html"), 100);
+document.querySelectorAll(".icon-menu").forEach((iconMenu) => {
+  iconMenu.addEventListener("click", () => {
+    document.querySelector(".nav-header-list-sm").style.display = "flex";
   });
 });
+
+document.querySelectorAll(".icon-close").forEach((iconClose) => {
+  iconClose.addEventListener("click", () => {
+    document.querySelector(".nav-header-list-sm").style.display = "none";
+  });
+});
+
+/* NAV FIXED */
+
+if (document.querySelector(".nav-fixed")) {
+  window.addEventListener("scroll", () => {
+    if (scrollY > 300) {
+      document.querySelector(".nav-fixed").style.display = "flex";
+    }
+    if (scrollY < 300) {
+      document.querySelector(".nav-fixed").style.display = "none";
+    }
+  });
+}
+
+if (document.querySelector(".nav-fixed-services")) {
+  window.addEventListener("scroll", () => {
+    if (scrollY > 300) {
+      document.querySelector(".nav-fixed-services").style.display = "flex";
+    }
+    if (scrollY < 300) {
+      document.querySelector(".nav-fixed-services").style.display = "none";
+    }
+  });
+}
 
 /* NAV INTERNAL */
 
@@ -91,15 +94,17 @@ document.querySelectorAll(".btn-navbar").forEach((btnNavbar) => {
 
 document.querySelector(".btn-hero").addEventListener("click", (e) => {
   e.preventDefault();
+  const id = document.querySelector(".btn-hero").getAttribute("href");
   setTimeout(() => {
-    document.querySelector("#section-services").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }, 200);
 });
 
 document.querySelector(".btn-hero-second").addEventListener("click", (e) => {
   e.preventDefault();
+  const id = document.querySelector(".btn-hero-second").getAttribute("href");
   setTimeout(() => {
-    document.querySelector("#section-contact").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
   }, 200);
 });
 
@@ -120,15 +125,6 @@ document.querySelector(".icon-up").addEventListener("click", (e) => {
   }, 200);
 });
 
-/*
-document.querySelector(".btn-tips").addEventListener("click", (e) => {
-  const sectionTips = document.querySelector(".section-tips");
-  sectionTips.style.display = "block";
-  setTimeout(() => {
-    sectionTips.scrollIntoView({ behavior: "smooth" });
-  }, 200);
-});
-*/
 /* LOGO FOOTER */
 
 document.querySelector(".logo-footer").addEventListener("click", (e) => {
@@ -148,14 +144,6 @@ document.querySelectorAll(".nav-footer-link").forEach((link) => {
     setTimeout(() => {
       document.querySelector(id).scrollIntoView({ behavior: "smooth" });
     }, 200);
-  });
-});
-
-document.querySelectorAll(".nav-external").forEach((link) => {
-  link.addEventListener("click", () => {
-    const id = link.getAttribute("href");
-    window.location.href = id;
-    setTimeout(() => history.replaceState(null, null, "index.html"), 100);
   });
 });
 
