@@ -1,3 +1,7 @@
+.transalte-neg- {
+  animation: showQuickBar 400ms;
+}
+
 @keyframes showQuickBar {
   from {
     transform: translateX(-100%);
