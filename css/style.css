@@ -1,107 +1,18 @@
 /* ----- Variables ----- */
 
 :root {
-  --color-primary: #000a5b;
-  --color-primary-light: #0e1b80;
-  --color-secondary: #4a7cd2;
-  --color-secondary-light: #00b3d3;
+  --color-primary: #640d5f;
+  --color-primary-light: #6d2469;
+  --color-secondary: #0d1164;
+  --color-secondary-light: #204479;
+  --color-secondary-ultra-light: #5096ff;
   --color-dark-grey: #333333;
   --color-light-grey: #3f3f3f;
   --color-ultra-light-grey: rgb(138, 138, 138);
-  --font-heading-primary: "Urbanist";
-  --font-heading-secondary: "Urbanist";
-  --font-buttons: "Inter";
-  --font-body: "Inter";
-}
-
-/* BG Colors Classes */
-
-.bg-white {
-  background-color: white !important;
-}
-
-.bg-dark {
-  background-color: var(--color-dark-grey) !important;
-}
-
-.bg-light-dark {
-  background-color: var(--color-light-grey) !important;
-}
-
-.bg-primary {
-  background-color: var(--color-primary) !important;
-}
-
-.bg-primary-light {
-  background-color: var(--color-primary-light) !important;
-}
-
-.bg-secondary {
-  background-color: var(--color-secondary) !important;
-}
-
-.bg-secondary-light {
-  background-color: var(--color-secondary-light) !important;
-}
-
-.bg-section-contrast {
-  background-color: #f0f6ff;
-}
-
-/* Text Colors Classes */
-
-.text-white {
-  color: white !important;
-}
-
-.text-dark {
-  color: var(--color-dark-grey) !important;
-}
-
-.text-red {
-  color: red !important;
-}
-
-.text-success {
-  color: var(--color-secondary);
-  display: none;
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 20px;
-}
-
-.text-light-dark {
-  color: var(--color-light-grey) !important;
-}
-
-.text-primary {
-  color: var(--color-primary) !important;
-}
-
-.text-primary-light {
-  color: var(--color-primary-light) !important;
-}
-
-.text-secondary {
-  color: var(--color-secondary) !important;
-}
-
-.text-secondary-light {
-  color: var(--color-secondary-light) !important;
-}
-
-.section-divider {
-  width: 50px;
-  height: 3px;
-}
-
-.ta-center {
-  text-align: center;
-}
-
-.center-block {
-  margin-left: 50%;
-  transform: translateX(-50%);
+  --font-heading-primary: "Mulish";
+  --font-heading-secondary: "Mulish";
+  --font-buttons: "Roboto";
+  --font-body: "Roboto";
 }
 
 /* ----- Global CSS ----- */
@@ -128,47 +39,4 @@ html {
 
 body {
   overflow-x: hidden;
-}
-
-section {
-  padding: 8rem 0;
-  scroll-margin-top: 10rem;
-}
-
-.section-scroll-margin-top {
-  scroll-margin-top: 14rem;
-}
-
-.container {
-  padding-right: 8px;
-  padding-left: 8px;
-}
-
-.container-fluid {
-  padding: 0;
-}
-
-@media screen and (min-width: 1400px) {
-  .container-fluid-large {
-    padding: 0rem 15rem;
-  }
-}
-
-.img-fluid {
-  width: 100%;
-  height: auto;
-}
-
-.img-team {
-  width: 300px;
-  height: auto;
-}
-
-.img-fluid-w-radius {
-  width: 100%;
-  height: auto;
-}
-
-iframe {
-  height: 300px;
 }

@@ -9,84 +9,13 @@
   width: fit-content;
   /* GENERAL */
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 30px;
   border: none;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.39);
 }
 
-.btn-navbar {
-  display: none;
-  z-index: 2;
-}
-
-.btn-navbar:hover {
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.144);
-  transition: 100ms ease-in;
-}
-
-.btn-hero {
-  display: block;
-}
-
-.btn-hero-second {
-  display: block;
-}
-
-.btn-hero:hover {
-  transform: translateY(-3px);
-  transition: 100ms ease-in;
-}
-
-.btn-hero-second:hover {
-  transform: translateY(-3px);
-  transition: 100ms ease-in;
-}
-
-.btn-schedule {
-  display: block;
-}
-
-.btn-schedule:hover {
-  transform: translateY(-2px);
-  transition: 100ms ease-in;
-}
-
-.btn-more {
-  display: block;
-}
-
-.btn-more:hover {
-  transform: translateY(-2px);
-  transition: 100ms ease-in;
-}
-
-.btn-add-review {
-  display: block;
-}
-
-.btn-tips {
-  display: block;
-}
-
-.btn-tips:hover {
-  transform: translateY(-2px);
-  transition: 100ms ease-in;
-}
-
-.btn-add-review:hover {
-  display: block;
-}
-
-.icon-google {
-  display: block;
-}
-
-.btn-submit {
-  display: block;
-}
-
-.btn-submit:hover {
-  transform: translateY(-2px);
   transition: 100ms ease-in;
 }

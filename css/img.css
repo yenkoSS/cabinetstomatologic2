@@ -1,0 +1,24 @@
+.img-about {
+  width: 65%;
+  height: auto;
+  box-shadow: 8px 8px 10px rgb(0 0 0 / 19%);
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.img-team {
+  width: 300px;
+  height: auto;
+}
+
+.img-faq {
+  width: 80%;
+  height: auto;
+}
+
+iframe {
+  height: 400px;
+}
